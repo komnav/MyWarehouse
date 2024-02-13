@@ -1,0 +1,4 @@
+Apple 10
+Nok 20
+Angur 40
+Anor 100
