@@ -2,11 +2,6 @@
 {
     public class ProductFileRepository : IProductRepository
     {
-        public ProductFileRepository()
-        {
-
-        }
-
         public void AddProduct(string name, int count)
         {
             var allProducts = GetAllProducts();
@@ -49,6 +44,11 @@
                 newProducts[i] = $"{product.Name} {product.Count}";
             }
             File.WriteAllLines("products.txt", newProducts);
+        }
+
+        public void UpdateProduct(string name, Product product)
+        {
+            throw new NotImplementedException();
         }
     }
 }

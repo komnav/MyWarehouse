@@ -8,13 +8,13 @@ var services = new ServiceCollection();
 
 services.AddSingleton<IWarehouseStrategyResolver, WarehouseStrategyResolver>();
 
-services.AddSingleton<IProductRepository, ProductFileRepository>();
+services.AddSingleton<IProductRepository, ProdactJsonRepository>();
 
 services.AddSingleton<IWarehouseStrategy, ShowProductsStrategy>();
 services.AddSingleton<IWarehouseStrategy, AddProductStrategy>();
 services.AddSingleton<IWarehouseStrategy, RemoveProductStrategy>();
 services.AddSingleton<IWarehouseStrategy, NoOperationStrategy>();
-services.AddSingleton<IWarehouseStrategy, ShowWarehousesStrategy>();
+services.AddSingleton<IWarehouseStrategy, SellProductStrategy>();
 
 services.AddSingleton<ApplicationStartup>();
 var provider = services.BuildServiceProvider();

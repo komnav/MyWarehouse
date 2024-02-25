@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Product.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
     <None Update="products.txt">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>

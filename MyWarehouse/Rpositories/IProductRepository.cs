@@ -7,5 +7,7 @@
         Product[] GetAllProducts();
 
         void RemoveProduct(string name);
+
+        void UpdateProduct(string name, Product product);
     }
 }
